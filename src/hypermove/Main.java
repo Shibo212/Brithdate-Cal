@@ -47,7 +47,7 @@ public class Main {
                 hours + " hours " +
                 minutes + " minutes " +
                 seconds + "seconds");
-
+        System.out.println("Made by Shehab via Git UI in Intellij");
 
     }
 }
