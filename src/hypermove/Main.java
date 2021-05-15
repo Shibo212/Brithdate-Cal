@@ -2,12 +2,17 @@ package hypermove;
 
 import java.time.LocalDateTime;
 import java.time.temporal.ChronoUnit;
+import java.util.Scanner;
 
 public class Main {
 
     public static void main(String[] args) {
 	// write your code here
-        LocalDateTime fromDateTime = LocalDateTime.of(1994, 12, 2, 12, 12, 12);
+        Scanner my_year = new Scanner(System.in);  // Create a Scanner object
+        System.out.println("Enter year of birth");
+        Long year = my_year.nextLong();
+
+        LocalDateTime fromDateTime = LocalDateTime.of(Math.toIntExact(year), 12, 2, 12, 12, 12);
         LocalDateTime toDateTime = LocalDateTime.now();
         LocalDateTime birthAge = LocalDateTime.from( fromDateTime );
 
